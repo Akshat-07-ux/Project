@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="resp.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>MS DHONI</title>
+</head>
+
+<body>
+
+
+
+  <div class="information">
+    <div class="overlay"></div>
+    <img src="msd.jpg" class="mobile">
+    <div id="circle">
+      <div class="feature one">
+        <img src="msd1.jpg">
+        <div>
+          <h1>NAME</h1>
+          <p>MAHENDRA SINGH DHONI</p>
+        </div>
+      </div>
+      <div class="feature two">
+        <img src="msd2.jpg">
+        <div>
+          <h1>DATE OF BIRTH</h1>
+          <p>7th JULY, 1981</p>
+        </div>
+      </div>
+      <div class="feature three">
+        <img src="msd3.jpg">
+        <div>
+          <h1>BIRTHPLACE</h1>
+          <p>Ranchi, Jharkhand</p>
+        </div>
+      </div>
+      <div class="feature four">
+        <img src="msd4.jpg">
+        <div>
+          <h1>DEBUT</h1>
+          <p>23rd December, 2003</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <img src="arrow.png" id="upbtn">
+    <h3>CLICK</h3>
+    <img src="arrow.png" id="downbtn">
+  </div>
+  </div>
+
+  <script>
+    var circle = document.getElementById("circle");
+    var upbtn = document.getElementById("upbtn");
+    var downbtn = document.getElementById("downbtn");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upbtn.onclick = function () {
+      rotateSum = rotateValue + "rotate(90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+    downbtn.onclick = function () {
+      rotateSum = rotateValue + "rotate(-90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+  </script>
+
+  <nav class="navbar background">
+    <ul class="nav-list v-class-resp">
+      <div class="logo" id="music-button"><img src="bg.jpg"> <script src="script.js"></script> </div>
+        
+        <link rel="stylesheet" href="styles.css">
+  
+      
+      
+      
+
+
+
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" target="_blank">About</a></li>
+      <li><a href="Records.html" target="_blank"> Accolades </a></li>
+      <li><a href="contact.html" target="_blank"> Contact </a></li>
+    </ul>
+
+
+  </nav>
+
+  
+  <section class="background firstSection">
+</section>
+
+<footer class="background">
+  <p class="text-footer"> Copyright @June,2023 - Designed by AKSHAT BHAGAT </p>
+</footer>
+</body>
+
+</html>

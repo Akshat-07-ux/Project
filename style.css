@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;  
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 20px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family:  'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    color: black;
+}
+
+
+.information{
+    width: 1000px;
+    height: 755px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 70px;
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    color: white;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+
+.one{
+    top: 450px;
+    right: 80px;
+}
+.two{
+    top: 135px;
+   left: 310px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 450px;
+    left: 45px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 160px;
+    right: 380px;
+    transform: rotate(-270deg);
+}
+.mobile{
+    width: 400px;
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 120px;
+    top: 65%;
+    left: 22%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 0.8%;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 5px 0;
+    color: whitesmoke;
+}
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 507px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('img.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 129vh;
+}
+
+
+
+
+  .secondHalf{
+    width: 20%;
+}
+
+.secondHalf img{
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 60px;
+}
+
+.text-small{
+    font-size: 30px;
+}
+
+
+
+.button{
+    padding: 1px 2px;
+    margin: 7px 3px;
+    width: 38vh;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: mintcream; 
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 75%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+p.sectionTag {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: orange; 
+    animation: scaleUp 0.2s ease-in infinite alternate;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(1.1);
+    }
+}
+
+p.sectionTag span{
+   color:  #005aba;; 
+    
+}
+
+p.sectionTag1 {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: orange; 
+    opacity: 0;
+    transform: scale(0.5);
+    animation: pop 1s ease-out  infinite;
+
+}
+
+p.sectionTag1 span {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #005aba; 
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+button.btn {
+    background-color: #3e00c3; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 15px; /* Set padding */
+    font-size: 16px; /* Set the font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    /* Add any additional styling you desire */
+}
+
+/* Style the button on hover */
+button.btn:hover {
+    background-color: cyan; /* Darken the background color on hover */
+    box-shadow: 0 0 10px 3px orange;
+}
+
+
+
+.nail img {
+    display: none;
+}
+
+#popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+#popupImage {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 3; /* Set a higher z-index to ensure it appears above other content */
+}
+.close-btn:hover {
+    color: #555;
+}
+
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 40px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+
+/*--------review---------*/
+
+.review{
+    margin: 100px 0;
+}
+
+.carousel-item img{
+    width: 180px;
+    height: 160px;
+    border-radius: 50%;
+}
+.carousel-item{
+    text-align: center;
+    height: 430px;
+}
+.carousel-caption{
+    z-index: -1 !important;
+    box-shadow: 0 0 15px 1px rgba(166,163,223,0.5);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.carousel-caption h6{
+    margin-top: 55px;
+    font-weight: bold;
+    color: #000 !important;
+}
+.carousel-caption small{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: block;
+    color: #000 !important;
+}
+.carousel-caption p{
+    text-align: center;
+    padding: 0 50px;
+    font-size: 15px;
+    color: #808080 !important;
+}
+.carousel-indicators li{
+    background-color: #6900d1 !important;
+}
+@media only screen and (max-width: 768px){
+    .carousel-item
+    {
+        height: 520px;
+    }
+    .carousel-caption{
+        margin: 0 10px 50px 10px;
+        left: 0 !important;
+        right: 0 !important;
+    }
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 800px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 10px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/*------footer------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    background-color: gainsboro;
+    padding-bottom: 1px;
+}
+
+.footer h2{
+    color:#000;
+    font-weight: bold;
+    margin: 40px 24px;
+}
+.footer input{
+    width: 60%;
+    background: transparent;
+    outline:none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+::placeholder{
+    color:#000;
+    font-size: 20px;
+}
+.footer button{
+    padding: 6px;
+    width: 180px;
+    margin: auto;
+    display: block;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 20px;
+    background: transparent;
+}
+
+.footer button:hover{
+    color:white;
+}
+.footer small{
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 2px;
+    color: #fff;
+    display: block;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    height: 0px;
+    cursor: pointer;
+    padding: 30px 0;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color:#f6f5f4;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+.container h1{
+    margin-top: 100px;
+    padding: 2px;
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+    text-align: center;
+}
+
+.background .text-footer{
+margin-bottom: -20px;
+}
+
+.icons1 .fa{
+    color: #f44336;
+    margin: 0 13px;
+    height: 0px;
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+.close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+
+.close-button:hover {
+    color: #ff0000; /* Change color on hover if desired */
+}
+
+
+
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about {
+    flex: 1;
+    max-width: 40%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    margin-left: 225px;
+    margin-top: 20px; /* Adjust the margin to create space between sections */
+}
+
+.abou {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 225px;
+    margin-top: -90px;
+}
+
+
+.abou h1 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.abou p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.about1 {
+    margin-top: -20px; /* Adjust the margin to create space between sections */
+    margin-left: 30px; /* Adjust the margin to create space between sections */
+    flex: 1;
+    max-width: 40%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.abou1 {
+    margin-top: -295px;
+    margin-left: 900px;
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.abou1 h1 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.abou1 p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
